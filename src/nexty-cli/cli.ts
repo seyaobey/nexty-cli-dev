@@ -74,20 +74,68 @@ export class Cli {
             }else{
 
                 let _res = [];
+                let k = 0;
+                let next = true;
 
-                models.forEach( (def:any) =>{
-                    _res.push(def.name)
+                do {
+
+                    let model = models[k++];
+
+                    this.discover_schema(ds, model).then ( () => {
+
+                    });
+
+
+                    next = k <= models.length - 1;
+
+                }   while (next === true);
+
+
+                models.forEach( (model:any) =>{
+
+                    _res.push(model.name)
                 });
 
-                d.resolve(_res);
+                //d.resolve(_res);
             }
 
         });
+        return d.promise;
+    }
+
+    private rcr_discover_schema(d:Q.Deferred<any>, ds, models, k, max) {
+
+        ds.discoverSchema('options.modelName', '{ owner: discoveryOptions.owner}', (err, schema) =>{
+            
+            if(err){
+                d.reject(err)
+            }else{
+
+                let _next_k = k+1;
+            
+                let stop = max > _next_k;
+
+                if(stop){
+                    d.resolve(true);
+                }else{
+
+                    let next_model = models[_next_k];
+
+                    this.rcr_discover_schema(d, ds, 'next-model', _next_k, max);
+                }            
+            }
+            
+        });    
+    }
+
+    private discover_schema(ds, model) {
+
+        let d = Q.defer();
+
 
         return d.promise;
 
     }
-
 
 
     private app: any;
