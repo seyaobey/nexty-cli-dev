@@ -1,0 +1,1 @@
+{"version":3,"file":"cli.js","sourceRoot":"","sources":["../../src/nexty-cli/cli.ts"],"names":[],"mappings":";;AACA,IAAI,IAAI,GAAG,OAAO,CAAC,WAAW,CAAC,CAAC;AAEhC;IAEI;QACI,IAAI,CAAC,GAAG,GAAG,OAAO,CAAC,IAAI,CAAC,mBAAmB,CAAC,CAAC,CAAC;IAClD,CAAC;IAED,6BAAe,GAAf;QAEA;;;;;;;;;;;;UAYE;IACF,CAAC;IAGL,UAAC;AAAD,CAAC,AAxBD,IAwBC;AAxBY,kBAAG"}

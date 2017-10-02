@@ -1,0 +1,1 @@
+{"version":3,"file":"cli-route.js","sourceRoot":"","sources":["../../src/boot/cli-route.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AACb,wCAAuC;AAEvC,iBAAS,UAAC,GAAG;IAET,GAAG,CAAC,GAAG,CAAC,MAAM,EAAE,UAAC,GAAY,EAAE,GAAa,EAAE,IAAI;QAE9C,IAAI,GAAG,GAAQ,IAAI,SAAG,EAAE,CAAC;QAEzB,GAAG,CAAC,eAAe,EAAE,CAAC;IAE1B,CAAC,CAAC,CAAC;AACP,CAAC,CAAA"}
