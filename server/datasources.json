@@ -3,20 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
-  "conn_mysql": {
-    "name": "conn_mysql",
+  "adworks_db": {
+    "name": "adworks_db",
     "host": "localhost",
     "port": 3306,
-    "database": "test_db",
-    "username": "root",        
-    "connector": "mysql"
-  },
-  "advworks_db": {
-    "name": "advworks_db",
-    "host": "localhost",
-    "port": 3306,
-    "database": "advworks_db",
-    "username": "root",        
+    "database": "adworks_db",
+    "username": "root", 
+    "password": "mysql",       
     "connector": "mysql"
   }
 }

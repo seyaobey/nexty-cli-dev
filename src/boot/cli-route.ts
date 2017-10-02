@@ -6,10 +6,12 @@ export = (app) =>{
     
     app.get('/cli', (req: Request, res: Response, next) =>{
         var cli: Cli = new Cli();
-        cli.load_datasource();
-        res.send({
-            ok: true
-        });
+        cli.load_datasource().then( _res =>{
+            res.send(_res);
+        }).catch(err =>{
+            next(err);
+        })
+        
     });
 }
 

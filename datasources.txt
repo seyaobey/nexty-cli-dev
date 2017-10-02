@@ -1,0 +1,10 @@
+
+  // "conn_mysql": {
+  //   "name": "conn_mysql",
+  //   "host": "localhost",
+  //   "port": 3306,
+  //   "database": "test_db",
+  //   "username": "root",
+  //   "password": "mysql",
+  //   "connector": "mysql"
+  // },

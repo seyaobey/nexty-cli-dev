@@ -4,7 +4,7 @@
             {
                 "type": "node",
                 "request": "launch",
-                "name": "Launch Program",                
+                "name": "chrome",                
                 "program": "${workspaceRoot}\\server\\server.js",
                 "outFiles": [
                     "${workspaceRoot}/server/**/*.js"
@@ -13,8 +13,9 @@
             {
                 "type": "node",
                 "request": "launch",
-                "name": "Prompt",  
-                "console": "integratedTerminal",              
+                "name": "prompt",  
+                "console": "integratedTerminal",
+                "protocol": "inspector",
                 "program": "${workspaceRoot}\\server\\nexty-cli\\index.js",
                 "outFiles": [
                     "${workspaceRoot}/server/**/*.js"

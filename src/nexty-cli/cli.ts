@@ -32,12 +32,63 @@ export class Cli {
                 choices: ds_list
             }
         ]).then( ans =>{
-            d.resolve(ans);            
+            let ds = ans.datasource;
+            this.discover_models(ds).then(rs =>{
+                d.resolve(rs);
+            }).catch(err =>{
+                d.reject(err);
+            })
+            
+        }).catch(err =>{
+            d.reject(err);
         });
         
-        return d.promise;
-   
+        return d.promise;   
     }
+
+
+    private discover_models(ds_name) {
+
+        let ds = this.app.datasources[ds_name];
+
+        let options = {
+            schema: ds_name,
+            relations: true,
+            all: true            
+        }
+
+        let d = Q.defer();
+
+        ds.discoverModelDefinitions(options, (err, models: string[]) =>{
+
+            if(err){
+
+                if(typeof err === 'string' ){
+                    console.log('error: ' + err)
+                }else{
+                    console.log(JSON.stringify(err))
+                }
+
+                d.reject(false);
+                
+            }else{
+
+                let _res = [];
+
+                models.forEach( (def:any) =>{
+                    _res.push(def.name)
+                });
+
+                d.resolve(_res);
+            }
+
+        });
+
+        return d.promise;
+
+    }
+
+
 
     private app: any;
 }
