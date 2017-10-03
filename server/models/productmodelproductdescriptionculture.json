@@ -1,0 +1,75 @@
+{
+  "name": "Productmodelproductdescriptionculture",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "productmodelproductdescriptionculture"
+    }
+  },
+  "properties": {
+    "productmodelid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "ProductModelID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "productdescriptionid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 2,
+      "mysql": {
+        "columnName": "ProductDescriptionID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "cultureid": {
+      "type": "String",
+      "required": true,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "id": 3,
+      "mysql": {
+        "columnName": "CultureID",
+        "dataType": "varchar",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Salesorderheadersalesreason",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "salesorderheadersalesreason"
+    }
+  },
+  "properties": {
+    "salesorderid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "SalesOrderID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "salesreasonid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 2,
+      "mysql": {
+        "columnName": "SalesReasonID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

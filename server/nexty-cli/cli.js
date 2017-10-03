@@ -3,7 +3,8 @@ exports.__esModule = true;
 var root = require('root-path');
 var inquirer = require("inquirer");
 var Q = require("q");
-var Cli = /** @class */ (function () {
+var fs = require("fs");
+var Cli = (function () {
     function Cli() {
         this.app = require(root('/server/server.js'));
     }
@@ -40,10 +41,11 @@ var Cli = /** @class */ (function () {
         });
         return d.promise;
     };
-    Cli.prototype.discover_models = function (ds_name) {
-        var ds = this.app.datasources[ds_name];
+    Cli.prototype.discover_models = function (schema) {
+        var _this = this;
+        var ds = this.app.datasources[schema];
         var options = {
-            schema: ds_name,
+            schema: schema,
             relations: true,
             all: true
         };
@@ -59,14 +61,60 @@ var Cli = /** @class */ (function () {
                 d.reject(false);
             }
             else {
-                var _res_1 = [];
-                models.forEach(function (def) {
-                    _res_1.push(def.name);
-                });
-                d.resolve(_res_1);
+                _this.discover_schema(d, ds, schema, models[0], models, 0, models.length);
             }
         });
         return d.promise;
+    };
+    Cli.prototype.discover_schema = function (d, ds, owner, model, models, k, max) {
+        var _this = this;
+        ds.discoverSchema(model.name, { owner: owner }, function (err, schema) {
+            if (err) {
+                console.log('discover_schema: error');
+                d.reject(err);
+            }
+            else {
+                console.log(model.name);
+                // process discovery
+                _this.write_files_for_model(owner, model.name, schema);
+                var _next_k = k + 1;
+                var stop_1 = max <= _next_k;
+                if (stop_1) {
+                    console.log('discover_schema: completed');
+                    d.resolve(true);
+                }
+                else {
+                    var next_model = models[_next_k];
+                    _this.discover_schema(d, ds, owner, next_model, models, _next_k, max);
+                }
+            }
+        });
+    };
+    Cli.prototype.write_files_for_model = function (ds, modelname, schema) {
+        var models_dir = root('/server/models');
+        if (!fs.existsSync(models_dir)) {
+            fs.mkdirSync(models_dir);
+        }
+        var filename = this.convertModelNameToFileName(modelname);
+        fs.writeFileSync(models_dir + "/" + filename + ".json", JSON.stringify(schema, null, 2));
+        var _model_name = modelname[0].toUpperCase() + modelname.substring(1);
+        fs.writeFileSync(models_dir + "/" + filename + ".js", this.defaultJsFileContents(_model_name));
+        this.updateModelConfig(modelname, ds);
+    };
+    Cli.prototype.updateModelConfig = function (model_name, ds) {
+        var config_path = root("server/model-config.json");
+        var cfg = JSON.parse(fs.readFileSync(config_path));
+        cfg[model_name] = {
+            dataSource: ds,
+            public: true
+        };
+        fs.writeFileSync(config_path, JSON.stringify(cfg, null, 2));
+    };
+    Cli.prototype.convertModelNameToFileName = function (modelName) {
+        return modelName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+    };
+    Cli.prototype.defaultJsFileContents = function (modelName) {
+        return "module.exports = function(" + modelName + "){};";
     };
     return Cli;
 }());

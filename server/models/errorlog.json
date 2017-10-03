@@ -1,0 +1,148 @@
+{
+  "name": "Errorlog",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "errorlog"
+    }
+  },
+  "properties": {
+    "errorlogid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "ErrorLogID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "errortime": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ErrorTime",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "username": {
+      "type": "String",
+      "required": true,
+      "length": 128,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "UserName",
+        "dataType": "varchar",
+        "dataLength": 128,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "errornumber": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ErrorNumber",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "errorseverity": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ErrorSeverity",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "errorstate": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ErrorState",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "errorprocedure": {
+      "type": "String",
+      "required": false,
+      "length": 126,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ErrorProcedure",
+        "dataType": "varchar",
+        "dataLength": 126,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "errorline": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ErrorLine",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "errormessage": {
+      "type": "String",
+      "required": true,
+      "length": 16777215,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ErrorMessage",
+        "dataType": "mediumtext",
+        "dataLength": 16777215,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "name": "Productinventory",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "productinventory"
+    }
+  },
+  "properties": {
+    "productid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "ProductID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "locationid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "id": 2,
+      "mysql": {
+        "columnName": "LocationID",
+        "dataType": "smallint",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "shelf": {
+      "type": "String",
+      "required": true,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Shelf",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "bin": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "Bin",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "quantity": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "Quantity",
+        "dataType": "smallint",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "rowguid": {
+      "type": "Binary",
+      "required": true,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "rowguid",
+        "dataType": "varbinary",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

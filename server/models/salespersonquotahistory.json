@@ -1,0 +1,89 @@
+{
+  "name": "Salespersonquotahistory",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "salespersonquotahistory"
+    }
+  },
+  "properties": {
+    "salespersonid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "SalesPersonID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "quotadate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "id": 2,
+      "mysql": {
+        "columnName": "QuotaDate",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "salesquota": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 22,
+      "scale": null,
+      "mysql": {
+        "columnName": "SalesQuota",
+        "dataType": "double",
+        "dataLength": null,
+        "dataPrecision": 22,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "rowguid": {
+      "type": "Binary",
+      "required": true,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "rowguid",
+        "dataType": "varbinary",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "name": "Creditcard",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "creditcard"
+    }
+  },
+  "properties": {
+    "creditcardid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "CreditCardID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "cardtype": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "CardType",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "cardnumber": {
+      "type": "String",
+      "required": true,
+      "length": 25,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "CardNumber",
+        "dataType": "varchar",
+        "dataLength": 25,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "expmonth": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ExpMonth",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "expyear": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ExpYear",
+        "dataType": "smallint",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "name": "Employee",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "employee"
+    }
+  },
+  "properties": {
+    "employeeid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "EmployeeID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "nationalidnumber": {
+      "type": "String",
+      "required": true,
+      "length": 15,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "NationalIDNumber",
+        "dataType": "varchar",
+        "dataLength": 15,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "contactid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ContactID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "loginid": {
+      "type": "String",
+      "required": true,
+      "length": 256,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "LoginID",
+        "dataType": "varchar",
+        "dataLength": 256,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "managerid": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ManagerID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "title": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Title",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "birthdate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "BirthDate",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "maritalstatus": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "MaritalStatus",
+        "dataType": "varchar",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "gender": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Gender",
+        "dataType": "varchar",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "hiredate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "HireDate",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "salariedflag": {
+      "type": "Binary",
+      "required": true,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "SalariedFlag",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "vacationhours": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "VacationHours",
+        "dataType": "smallint",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "sickleavehours": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "SickLeaveHours",
+        "dataType": "smallint",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "currentflag": {
+      "type": "Binary",
+      "required": true,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "CurrentFlag",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "rowguid": {
+      "type": "Binary",
+      "required": true,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "rowguid",
+        "dataType": "varbinary",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

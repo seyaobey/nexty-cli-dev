@@ -35,7 +35,284 @@
     "dataSource": "db",
     "public": false
   },
-  "Note": {
-    "dataSource": "db"
+  "address": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "addresstype": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "awbuildversion": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "billofmaterials": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "contact": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "contactcreditcard": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "contacttype": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "countryregion": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "countryregioncurrency": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "creditcard": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "culture": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "currency": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "currencyrate": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "customer": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "customeraddress": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "databaselog": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "department": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "document": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "employee": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "employeeaddress": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "employeedepartmenthistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "employeepayhistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "errorlog": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "illustration": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "individual": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "jobcandidate": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "location": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "product": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productcategory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productcosthistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productdescription": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productdocument": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productinventory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productlistpricehistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productmodel": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productmodelillustration": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productmodelproductdescriptionculture": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productphoto": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productproductphoto": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productreview": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productsubcategory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "productvendor": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "purchaseorderdetail": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "purchaseorderheader": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesorderdetail": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesorderheader": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesorderheadersalesreason": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesperson": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salespersonquotahistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesreason": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salestaxrate": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesterritory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "salesterritoryhistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "scrapreason": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "shift": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "shipmethod": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "shoppingcartitem": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "specialoffer": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "specialofferproduct": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "stateprovince": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "store": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "storecontact": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "transactionhistory": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "transactionhistoryarchive": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "unitmeasure": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "vendor": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "vendoraddress": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "vendorcontact": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "workorder": {
+    "dataSource": "adworks_db",
+    "public": true
+  },
+  "workorderrouting": {
+    "dataSource": "adworks_db",
+    "public": true
   }
 }

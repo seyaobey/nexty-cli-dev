@@ -1,0 +1,133 @@
+{
+  "name": "Address",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "address"
+    }
+  },
+  "properties": {
+    "addressid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "AddressID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "addressline1": {
+      "type": "String",
+      "required": true,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "AddressLine1",
+        "dataType": "varchar",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "addressline2": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "AddressLine2",
+        "dataType": "varchar",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "city": {
+      "type": "String",
+      "required": true,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "City",
+        "dataType": "varchar",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "stateprovinceid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "StateProvinceID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "postalcode": {
+      "type": "String",
+      "required": true,
+      "length": 15,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "PostalCode",
+        "dataType": "varchar",
+        "dataLength": 15,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "rowguid": {
+      "type": "Binary",
+      "required": true,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "rowguid",
+        "dataType": "varbinary",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

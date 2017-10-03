@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "adworks_db": {
-    "name": "adworks_db",
     "host": "localhost",
     "port": 3306,
     "database": "adworks_db",
-    "username": "root", 
-    "password": "mysql",       
+    "username": "root",
+    "password": "mysql",
+    "name": "adworks_db",
     "connector": "mysql"
   }
 }

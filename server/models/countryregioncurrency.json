@@ -1,0 +1,59 @@
+{
+  "name": "Countryregioncurrency",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "countryregioncurrency"
+    }
+  },
+  "properties": {
+    "countryregioncode": {
+      "type": "String",
+      "required": true,
+      "length": 3,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "mysql": {
+        "columnName": "CountryRegionCode",
+        "dataType": "varchar",
+        "dataLength": 3,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "currencycode": {
+      "type": "String",
+      "required": true,
+      "length": 3,
+      "precision": null,
+      "scale": null,
+      "id": 2,
+      "mysql": {
+        "columnName": "CurrencyCode",
+        "dataType": "varchar",
+        "dataLength": 3,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}

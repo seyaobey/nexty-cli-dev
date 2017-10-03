@@ -10,8 +10,7 @@ export = (app) =>{
             res.send(_res);
         }).catch(err =>{
             next(err);
-        })
-        
+        })        
     });
 }
 

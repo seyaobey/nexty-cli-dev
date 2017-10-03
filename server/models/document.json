@@ -1,0 +1,163 @@
+{
+  "name": "Document",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "adworks_db",
+      "table": "document"
+    }
+  },
+  "properties": {
+    "documentid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "DocumentID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "title": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Title",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "filename": {
+      "type": "String",
+      "required": true,
+      "length": 16777215,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "FileName",
+        "dataType": "mediumtext",
+        "dataLength": 16777215,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "fileextension": {
+      "type": "String",
+      "required": true,
+      "length": 8,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "FileExtension",
+        "dataType": "varchar",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "revision": {
+      "type": "String",
+      "required": true,
+      "length": 5,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Revision",
+        "dataType": "varchar",
+        "dataLength": 5,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "changenumber": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "ChangeNumber",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "status": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "Status",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "documentsummary": {
+      "type": "String",
+      "required": false,
+      "length": 16777215,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "DocumentSummary",
+        "dataType": "mediumtext",
+        "dataLength": 16777215,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "document": {
+      "type": "Binary",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Document",
+        "dataType": "blob",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "modifieddate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ModifiedDate",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  }
+}
