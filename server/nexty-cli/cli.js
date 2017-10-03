@@ -106,7 +106,7 @@ var Cli = (function () {
         var cfg = JSON.parse(fs.readFileSync(config_path));
         cfg[model_name] = {
             dataSource: ds,
-            public: true
+            public: false
         };
         fs.writeFileSync(config_path, JSON.stringify(cfg, null, 2));
     };

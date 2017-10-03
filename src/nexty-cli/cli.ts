@@ -141,10 +141,9 @@ export class Cli {
         let config_path = root(`server/model-config.json`);
         
         var cfg = JSON.parse(fs.readFileSync(config_path) as any);
-
-        cfg[model_name] = {
+            cfg[model_name] = {
             dataSource: ds,
-            public: true
+            public: false
         };
 
         fs.writeFileSync(config_path, JSON.stringify(cfg, null, 2));
