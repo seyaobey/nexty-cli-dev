@@ -11,7 +11,7 @@ export class Cli {
         this.app = require(root('/server/server.js'));        
     }
 
-    load_datasource() {
+    generate_models() {
 
         let ds_list = [];
 

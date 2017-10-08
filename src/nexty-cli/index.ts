@@ -3,7 +3,7 @@ import { Cli } from './cli';
 
 var cli:Cli = new Cli();
 
-cli.load_datasource().then(res =>{
+cli.generate_models().then(res =>{
     console.log(res);
 })
 .catch(err =>{

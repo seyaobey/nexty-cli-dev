@@ -2,7 +2,7 @@
 exports.__esModule = true;
 var cli_1 = require("./cli");
 var cli = new cli_1.Cli();
-cli.load_datasource().then(function (res) {
+cli.generate_models().then(function (res) {
     console.log(res);
 })["catch"](function (err) {
     console.log('error');

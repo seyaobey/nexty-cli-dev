@@ -5,12 +5,15 @@ import { Request, Response } from 'express';
 export = (app) =>{
     
     app.get('/cli', (req: Request, res: Response, next) =>{
+        
         var cli: Cli = new Cli();
-        cli.load_datasource().then( _res =>{
+
+        cli.generate_models().then( _res =>{
             res.send(_res);
         }).catch(err =>{
             next(err);
-        })        
+        });
+                
     });
 }
 

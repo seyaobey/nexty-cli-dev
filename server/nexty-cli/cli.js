@@ -8,7 +8,7 @@ var Cli = (function () {
     function Cli() {
         this.app = require(root('/server/server.js'));
     }
-    Cli.prototype.load_datasource = function () {
+    Cli.prototype.generate_models = function () {
         var _this = this;
         var ds_list = [];
         var _loop_1 = function () {
